@@ -1078,6 +1078,7 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             device_class=SensorDeviceClass.POWER,
             state_class=SensorStateClass.MEASUREMENT,
             native_unit_of_measurement=UnitOfPower.WATT,
+            suggested_unit_of_measurement=UnitOfPower.WATT
         ),
         TuyaSensorEntityDescription(
             key=DPCode.TEMP_CURRENT,
